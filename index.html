@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -30,8 +31,8 @@
 
 </head>
 
-<body id="page-top" class="index">
-
+<body  class="index">
+    <a id="page-top"></a>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -43,7 +44,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Gordana Hausleitner</a>
+                <a class="navbar-brand" href="#page-top">Home</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -70,18 +71,27 @@
 
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/pinsel.png" alt="">
+            <div class="hero">
+            <ul>
+                <li><img src="img/pinsel.png" alt="" height="300px">
                     <div class="intro-text">
                         <span class="name">gordana<br><span class="lastname">Hausleitner</span></span>
-                        <hr class="star-light">
+                        <!--<hr class="star-light">-->
                         <span class="skills">skin care coach - make-up artist - nobusan ernährungsberater</span>
-                    </div>
-                </div>
+                    </div></li>
+                <li><img src="img/gordana.jpg" alt="" height="300px"></li>
+            </ul>
             </div>
-        </div>
+            <!--<div class="row">-->
+                <!--<div class="col-lg-12">-->
+                    <!---->
+                    <!--<div class="intro-text">-->
+                        <!--<span class="name">gordana<br><span class="lastname">Hausleitner</span></span>-->
+                        <!--<hr class="star-light">-->
+                        <!--<span class="skills">skin care coach - make-up artist - nobusan ernährungsberater</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
     </header>
 
     <!-- Portfolio Grid Section -->
@@ -536,6 +546,19 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
 
+    <script src="js/unslider.js"></script>
+    <script>
+        $(function() {
+            $('.hero').unslider({
+                speed: 500,               //  The speed to animate each slide (in milliseconds)
+                delay: 2000,              //  The delay between slide animations (in milliseconds)
+                complete: function() {},  //  A function that gets called after every slide animation
+                keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+                dots: true,               //  Display dot navigation
+                fluid: true              //  Support responsive design. May break non-responsive designs
+            });
+        });
+    </script>
 </body>
 
 </html>
